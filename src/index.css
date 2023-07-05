@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .layout {
+    @apply text-brown font-medium font-primary h-screen grid grid-rows-layout;
+  }
+  .title {
+    @apply bg-yellow font-title font-normal uppercase text-7.5xl py-6 text-center wordSpacing-30;
+  }
+  .select,
+  .input {
+    @apply bg-yellow-light rounded-full py-3 px-8 border-none cursor-pointer;
+  }
+  .form {
+    @apply bg-orange flex gap-2 justify-center py-7 items-center font-bold text-lg;
+  }
+  .button {
+    @apply bg-green rounded-full uppercase py-3 px-8;
+  }
+  .packing {
+    @apply bg-brown py-10 flex flex-col justify-between items-center gap-8  text-2xl;
+  }
+  .packing ul {
+    @apply text-yellow-light;
+  }
+  .packing .clear,
+  .packing select {
+    @apply select uppercase py-2 px-6 mx-2 font-bold text-sm;
+  }
+  .packing li input {
+    @apply w-5 h-5 accent-orange;
+  }
+  .packing li button {
+    @apply text-lg translate-y-[2px] p-2;
+  }
+  .list-items {
+    @apply grid grid-cols-list gap-3 w-4/5;
+  }
+  .item {
+    @apply flex gap-3 items-center;
+  }
+  .stats {
+    @apply bg-green font-bold italic text-center py-8 text-2xl;
+  }
+}
+
+@layer utilities {
+  .wordSpacing-30 {
+    word-spacing: 1.875rem;
+  }
+}
